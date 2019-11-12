@@ -10,23 +10,17 @@ module.exports = function(config) {
     },
     webpack: {
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/,
-            loader: 'babel', // 'babel-loader' is also a legal name to reference
-            query: {
-              presets: ['react', 'es2015']
-            }
+            loader: 'babel-loader'
           },
           {
             test: /\.ogg/,
-            loader: 'file'
+            loader: 'file-loader'
           }
         ],
-        query: {
-          presets: ['es2015']
-        },
       },
       watch: true,
     },
