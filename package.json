@@ -8,7 +8,7 @@
     "build": "webpack -p",
     "watch": "webpack -p --watch",
     "prepare": "npm run build",
-    "example": "webpack-dev-server --content-base example/ --config example/webpack.config.js --progress --colors"
+    "example": "cd example && webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
